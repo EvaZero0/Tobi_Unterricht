@@ -27,26 +27,28 @@
 // Menü anzeigen mit Optionen
 Console.WriteLine("Willkommen bei TD!");
 Console.WriteLine("Was möchtest du tun?");
-Console.WriteLine("\t1. Neues Todo erstellen\n\t2. Todos anzeigen");
+string[] todos
 
 do
 {
-    var input = Console.ReadLine();
+    Console.WriteLine("\t1. Neues Todo erstellen\n\t2. Todos anzeigen");
 
-    switch (input)
-    {
-        case "1":
-            // Option 1: Todo erstellen
-            // Userintput nehmen
-            var todo = Console.ReadLine();
+var input = Console.ReadLine();
 
-            // Neues Todo zur Todoliste hinzufügen
-            // Todo erstellen
-            Console.WriteLine("CREATE");
-            break;
-        case "2":
-            // Liste der Todos anzeigen
-            Console.WriteLine("READ");
-            break;
-    }
-} while (false);
+switch (input)
+{
+    case "1":
+        // Option 1: Todo erstellen
+        // Userintput nehmen
+        var todo = Console.ReadLine();
+
+        // Neues Todo zur Todoliste hinzufügen
+        // Todo erstellen
+        Console.WriteLine("CREATE");
+        break;
+    case "2":
+        // Liste der Todos anzeigen
+        Console.WriteLine("READ");
+        break;
+}
+} while (false) ;
