@@ -61,6 +61,7 @@ do
         case "2":  // ToDos auflisten
             Console.WriteLine("Du hast folgende Aufgaben:");
             for (int i = 0; i < toDos.Length; i++)
+              //  if (toDos[i] != null)
             {
                 Console.WriteLine($"\t{i}. {toDos[i]}"); //Listet alle Positionen auf
             }
